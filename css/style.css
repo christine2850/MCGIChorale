@@ -179,36 +179,41 @@ body {
 /* Features Section */
 .features-section {
   background-color: #f8f9fa;
+  padding: 80px 0; /* Add more breathing room top/bottom */
 }
 
 .feature-card {
   background: #ffffff;
   border-radius: 1rem;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
-  height: 100%;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Works with the h-100 class */
 }
 
 .feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 133, 213, 0.15); /* Tinted shadow on hover */
 }
 
 .feature-icon {
-  font-size: 2.5rem;
+  font-size: 3rem; /* Slightly larger for impact */
   color: #0085d5;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 .feature-card h4 {
   font-weight: 700;
-  font-size: 1.1rem;
-  margin-bottom: 0.75rem;
+  color: #333;
+  margin-bottom: 1rem;
 }
 
 .feature-card p {
   font-size: 0.95rem;
-  color: #555;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 0;
 }
 
 /* Quick Links Section */
