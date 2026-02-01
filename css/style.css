@@ -1,0 +1,591 @@
+:root {
+  --hero-height: 560px;
+  --hero-tint: rgba(0, 0, 0, 0.25);
+}
+
+body {
+  font-family: "Montserrat", "Comic Sans MS", cursive, sans-serif;
+  color: #111;
+}
+
+/* Header / Navbar bar */
+.site-header {
+  background-color: #0085d5;
+}
+
+.main-navbar {
+  background-color: #0085d5;
+}
+
+.main-navbar .navbar-brand .brand-title,
+.main-navbar .navbar-brand .brand-subtitle {
+  color: #ffffff;
+}
+
+.main-navbar .navbar-brand .brand-subtitle {
+  opacity: 0.85;
+}
+
+/* Brand */
+.navbar-brand .brand-title {
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  font-size: 1.05rem;
+}
+
+.navbar-brand .brand-subtitle {
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  opacity: 0.7;
+}
+
+/* Navbar */
+.navbar .nav-link {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
+  color: #ffffff;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:focus,
+.navbar .nav-link:hover {
+  color: #ffdd00;
+}
+
+.btn-get-in-touch {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  border-width: 2px;
+  padding: 0.75rem 1.35rem;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.btn-get-in-touch:hover,
+.btn-get-in-touch:focus {
+  background-color: #ffd416;
+  color: #0085d5;
+}
+
+/* Welcome Section */
+.welcome-section {
+  background-color: #ffffff;
+  padding: 8rem 1rem 3rem 1rem;
+}
+
+.welcome-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+  color: #ffd800;
+}
+
+.welcome-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+  color: #ffd800;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  min-height: 420px;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 30% 20%,
+    rgba(255, 255, 255, 0.12),
+    transparent 45%
+  );
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.hero-title {
+  color: #fff;
+  font-weight: 800;
+  font-size: clamp(2.1rem, 3.7vw, 3.25rem);
+  margin-bottom: 0.9rem;
+}
+
+.hero-subtitle {
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 40rem;
+  margin: 0 0 1.8rem 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.05rem;
+}
+
+.hero-carousel,
+.hero-carousel .carousel-inner,
+.hero-slide-img {
+  height: var(--hero-height);
+}
+
+.hero-slide-img {
+  object-fit: cover;
+}
+
+.hero-caption {
+  left: 10%;
+  right: auto;
+}
+
+.btn-hero {
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.65);
+  background: transparent;
+  padding: 0.9rem 1.7rem;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+
+.btn-hero:hover,
+.btn-hero:focus {
+  color: #111;
+  background: #fff;
+  border-color: #fff;
+}
+
+/* About Section */
+.about-section {
+  background-color: #ffffff;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #0085d5;
+}
+
+/* Features Section */
+.features-section {
+  background-color: #f8f9fa;
+}
+
+.feature-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #0085d5;
+  margin-bottom: 1rem;
+}
+
+.feature-card h4 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Quick Links Section */
+.quick-links-section {
+  background-color: #ffffff;
+}
+
+/* Footer */
+.site-footer,
+.footer {
+  background-color: #ffd800;
+  color: #004b9a;
+}
+
+/* Officers / team cards */
+.team-member {
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin: 0 auto 1rem auto;
+  background-color: #e9ecef;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-member h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.team-member .position {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.officer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: #0d6efd;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.officer-link:hover {
+  text-decoration: underline;
+}
+
+/* Pagsulong steps */
+.pagsulong-step {
+  margin-bottom: 3rem;
+}
+
+.pagsulong-step-number {
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #0085d5;
+}
+
+.pagsulong-step-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.pagsulong-step-text {
+  font-size: 0.96rem;
+}
+
+.pagsulong-step-text small {
+  display: block;
+  color: #555;
+}
+
+.pagsulong-image-square {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px; /* optional */
+}
+
+.footer-heading {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.footer-label {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.footer-link {
+  color: #004b9a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  text-decoration: underline;
+}
+
+/* About Page */
+.about-header {
+  background: linear-gradient(135deg, #0085d5 0%, #004b9a 100%);
+}
+
+.timeline-badge {
+  display: inline-block;
+  background-color: #0085d5;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-badge.highlight {
+  background-color: #ffd800;
+  color: #004b9a;
+}
+
+.timeline-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid #0085d5;
+  text-align: left;
+}
+
+.timeline-content.highlight-card {
+  border-left-color: #ffd800;
+  background: linear-gradient(135deg, #fffef5 0%, #fff 100%);
+}
+
+.timeline-content h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0085d5;
+  margin-bottom: 1rem;
+}
+
+.song-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+.song-list li {
+  padding: 0.35rem 0;
+  font-weight: 500;
+}
+
+.info-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.info-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0085d5;
+  margin-bottom: 1rem;
+}
+
+.milestone-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  height: 100%;
+}
+
+.milestone-year {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffd800;
+  margin-bottom: 0.75rem;
+}
+
+/* Duties Page */
+.duties-header {
+  background: linear-gradient(135deg, #0085d5 0%, #004b9a 100%);
+}
+
+.duties-events-section {
+  background-color: #fffef5;
+}
+
+.duties-blue-section {
+  background: linear-gradient(135deg, #0085d5 0%, #004b9a 100%);
+}
+
+.section-title-light {
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.duty-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.duty-card-yellow {
+  background: #ffffff;
+  border-left: 5px solid #ffd800;
+}
+
+.duty-card-blue {
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 5px solid #ffd800;
+}
+
+.duty-image {
+  height: 100%;
+  min-height: 160px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.duty-image-placeholder {
+  height: 100%;
+  min-height: 160px;
+  background: linear-gradient(135deg, #ffd800 0%, #f5c400 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 2.5rem;
+}
+
+.duty-image-placeholder-light {
+  height: 100%;
+  min-height: 160px;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 2.5rem;
+}
+
+.duty-content {
+  padding: 1.5rem 2rem;
+}
+
+.duty-content h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #004b9a;
+  margin-bottom: 0.5rem;
+}
+
+.duty-content p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
+.duty-content-light {
+  padding: 1.5rem 2rem;
+}
+
+.duty-content-light h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffd800;
+  margin-bottom: 0.5rem;
+}
+
+.duty-content-light p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 0;
+}
+
+/* Calendar Page */
+.calendar-header {
+  background: linear-gradient(135deg, #0085d5 0%, #004b9a 100%);
+}
+
+.calendar-month {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.month-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0085d5;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #ffd800;
+}
+
+.calendar-table {
+  margin-bottom: 0;
+}
+
+.calendar-table th {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+.calendar-table td {
+  vertical-align: middle;
+}
+
+.schedule-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  height: 100%;
+  transition: transform 0.2s ease;
+}
+
+.schedule-card:hover {
+  transform: translateY(-5px);
+}
+
+.schedule-icon {
+  font-size: 2.5rem;
+  color: #0085d5;
+  margin-bottom: 1rem;
+}
+
+.schedule-card h4 {
+  font-weight: 700;
+  color: #004b9a;
+}
+
+@media (max-width: 576px) {
+  :root {
+    --hero-height: 520px;
+  }
+
+  .btn-get-in-touch {
+    width: 100%;
+  }
+}
